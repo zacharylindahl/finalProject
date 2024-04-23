@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <style>
+        .banner {
+            background-image: file:///D:/SP24/web_dev/final/images.jpg;
+            background-size: cover;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <p>Perfectly Portioned Fitness</p>
+	<p>Name: Zac Lindahl
+    <p>Course: WEB-115 Web Development</p>
+    <p>Section: 2024SP.WEB.115.0004</p>
+    <h1>Build Your Meal Plan</h1>
+</div>
+
+
+<form>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="goal">Goal for the week:</label>
+    <input type="text" id="goal" name="goal"><br><br>
+    
+    <label>Monday:</label><br>
+    Breakfast: <input type="text" id="monday-breakfast"><br>
+    Snack: <input type="text" id="monday-snack"><br>
+    Lunch: <input type="text" id="monday-lunch"><br>
+    Dinner: <input type="text" id="monday-dinner"><br><br>
+    
+    <label>Tuesday:</label><br>
+    Breakfast: <input type="text" id="tuesday-breakfast"><br>
+    Snack: <input type="text" id="tuesday-snack"><br>
+    Lunch: <input type="text" id="tuesday-lunch"><br>
+    Dinner: <input type="text" id="tuesday-dinner"><br><br>
+	
+	<label>Wednesday:</label><br>
+    Breakfast: <input type="text" id="wednesday-breakfast"><br>
+    Snack: <input type="text" id="wednesday-snack"><br>
+    Lunch: <input type="text" id="wednesday-lunch"><br>
+    Dinner: <input type="text" id="wednesday-dinner"><br><br>
+	
+	<label>Thursday:</label><br>
+    Breakfast: <input type="text" id="thursday-breakfast"><br>
+    Snack: <input type="text" id="thursday-snack"><br>
+    Lunch: <input type="text" id="thursday-lunch"><br>
+    Dinner: <input type="text" id="thursday-dinner"><br><br>
+	
+	<label>Friday:</label><br>
+    Breakfast: <input type="text" id="friday-breakfast"><br>
+    Snack: <input type="text" id="friday-snack"><br>
+    Lunch: <input type="text" id="friday-lunch"><br>
+    Dinner: <input type="text" id="friday-dinner"><br><br>
+	
+	<label>Saturday:</label><br>
+    Breakfast: <input type="text" id="saturday-breakfast"><br>
+    Snack: <input type="text" id="saturday-snack"><br>
+    Lunch: <input type="text" id="saturday-lunch"><br>
+    Dinner: <input type="text" id="saturday-dinner"><br><br>
+	
+	<label>Sunday:</label><br>
+    Breakfast: <input type="text" id="sunday-breakfast"><br>
+    Snack: <input type="text" id="sunday-snack"><br>
+    Lunch: <input type="text" id="sunday-lunch"><br>
+    Dinner: <input type="text" id="sunday-dinner"><br><br>
+    
+    <input type="button" value="Generate Meal Plan" onclick="generateMealPlan()">
+
+    <input type="reset" value="Clear Form">
+</form>
+
+
+</body>
+</html>
+
+
+
+/* TODO: 
+Make banner art
+figure out why banner art is broken
+figure out why validation is broken
+accept input and generate plan
+make plan printable and downloadable
+*/
