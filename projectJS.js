@@ -65,14 +65,21 @@ function generateMealPlan() {
     html += "</table>";
     html += "</body></html>";
 
-
-    var newWindow = window.open();
+	var filename = "meal_plan.html";
+    var blob = new Blob([html], { type: 'text/html' });
+    var link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+    link.click();
+	
+    var newWindow = window.open("", "_blank");
     newWindow.document.write(html);
+    newWindow.document.close();
+    newWindow.print();
 }
 
 
 function validateEmail(email) {
-
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
